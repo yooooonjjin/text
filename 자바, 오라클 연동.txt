@@ -1,0 +1,36 @@
+[ 자바 / 오라클 연동 ]
+
+{ 드라이버 설정 }
+*	드라이버		: (하드웨어 / 소프트웨어)를 연결하는 (연결 프로그램)
+	예)			: 보드 / 하드 / 랜카드
+	ojdbc6.jar	: 자바 프로그램 + 오라클 프로그램(SQL) 연결하는 프로그램
+
+myProject1	- dept	- DeptList.java
+					- DeptDetail.java
+						select deptno, dname, loc from dept where deptno = 20;
+					- DeptTotal.java
+						select count(*) total from dept;
+						>> 총 개수 : ~개
+						
+					- DeptWrite.java
+						insert into dept(no,deptno,dname,loc) values('10','100','경리부','서울');
+					- DeptModify.java
+						update dept set dname = '경리부3' , loc = '광주' where deptno = 100;
+					- DeptDelete.java
+						delete from dept where deptno = 100;
+
+
+			- dept2	- OracleConn.java
+					- DeptList.java
+						(1) 목록 출력
+						(2) 총 개수 출력
+					- DeptWrite.java
+						(1) 부서 번호 자동
+						(2) scanner 기능 - 부서이름 / 부서위치
+					- DeptModify.java
+						(1) scanner 기능 - 부서번호 / 부서이름 / 부서위치
+					- DeptDelete.java
+						(1) scanner 기능 - 부서번호
+						
+						
+			- emp	- EmpList.java

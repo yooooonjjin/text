@@ -1,0 +1,50 @@
+{일반게시판}
+1. 등록 화면 - boardWrite.jsp
+2. 등록 처리 - boardInsert.jsp
+3. 목록 화면 - boardList.jsp
+4. 상세 화면 - boardDetail.jsp
+5. 수정 화면 - boardModify.jsp
+6. 수정 처리 - boardUpdate.jsp
+7. 암호 화면 - passWrite.jsp
+8. 삭제 처리 - boardDelete.jsp
+
+{테이블구조} - {nboard}
+1. 번호	- seqid	
+2. 제목	- title 
+3. 암호	- pass
+4. 글쓴이	- writer
+5. 내용	- content
+6. 조회수	- hits
+7. 등록일	- rdate
+8. 변경일	- udate
+----------------------------------------------------
+{테이블생성} - drop table nboard; (지우기)
+
+create table nboard (
+	seqid number not null,
+	title varchar2(100) not null,
+	pass varchar2(100) not null,
+	writer varchar2(30),
+	content varchar2(4000),
+	hits number default '0',
+	rdate timestamp default sysdate,
+	udate timestamp,
+	constraint nboard_pk primary key(seqid)
+);
+----------------------------------------------------
+{시퀀스생성} - drop sequence nboard_seq; (지우기)
+
+create sequence nboard_seq 
+start with 1
+increment bi 1
+maxvalue 99999;
+----------------------------------------------------
+
+
+
+
+
+
+
+
+

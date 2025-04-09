@@ -1,0 +1,30 @@
+comn		- DbConn.java
+
+dept		-
+dept2	- 
+
+emp		- EmpList.java
+			>> total
+			>> list	- 최근 입사순
+					- 사원번호 / 사원이름 / 업무 / 입사일 / 부서번호
+					
+		- EmpWrite.java
+			>> 사원번호 .. 자동
+			>> Scanner 기능 .. 입력
+			
+		- EmpWrite2.java
+			>> 사원번호 .. 자동 (SQL
+			>> Scanner 기능 .. 입력 (
+		
+		- EmpWrite3.java
+			>> 사원번호 .. 자동 
+			>> Scanner 기능 .. 입력 
+			
+		- EmpModify.java
+			>> Scanner 기능 .. 입력
+			
+		- EmpDelete.java
+			>> Scanner 기능 .. 입력(사원번호)
+
+	
+post		- Batchpost2.java

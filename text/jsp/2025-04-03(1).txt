@@ -1,0 +1,21 @@
+http://localhost:8080/jspProject/dept2/deptList.jsp
+http://웹주소(또는 IP):포트번호/프로젝명/폴더명/파일명
+http://abc.com/dept2/
+
+----------------------------------------------------------------
+webapp	- dept
+		- dept2
+		- emp
+			1) empList.jsp
+			
+				- 사원번호 / 사원이름 / 업무 / 부서번호 / 입사일
+				- empno,ename,job,deptno,hiredate
+			2) empWrite.jsp
+			3) empWriteSave.jsp
+			4) empDetail.jsp
+			5) empModify.jsp
+			6) empModifySave.jsp
+			7) empDelete.jsp
+			
+		- include	- dbcon.jsp
+		- css	- style.css

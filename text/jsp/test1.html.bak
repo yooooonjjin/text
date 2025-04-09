@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <script>
+ 
+ function fn_abc() {
+	 var a1 = "abc";
+	 var a2 = 100;
+	 var a3 = 1.123;
+	 a4 = "java";
+	 //alert ( a1+","+a2+","+a3+","+a4);
+	 
+	 var a1 = "java";
+	 var a1 = "java2";		// ok (중복선언 가능)
+	 
+	 let b1 = "css";
+	 //let b1 = "css2";		// fail (중복선언 불가능)
+	 b1 = "css2";			// ok (값의 재정의 가능)
+	 
+	 const c1 = "react";	// ok (처음 선언 가능)
+	 //const c1 = "react2";	// fail (중복선언 불가능)
+	 //c1 = "react2";		// fail (값의 재정의 불가능)
+	 
+	 alert ( a1+","+b1+","+c1 );
+ }
+ 
+ </script>
+ <!--  onClick / onLoad / ~~~ -->
+ <body onLoad="fn_abc()">
+	<table onClick="">
+ </body>
+</html>

@@ -1,0 +1,9 @@
+sqlplus sys/123456 as sysdba
+
+create user c##java identified by 1234;
+
+grant connect,resource,dba to c##java;
+
+exit
+
+sqlplus c##java/1234

@@ -1,0 +1,27 @@
+[ 경로 ]
+
+1. 절대경로
+	최상위 [c:/]로 부터의 표기	
+	
+	
+2. 상대경로
+	의미 : 나 자신에서 시작한 경로 표기
+	방법 : ../(상위폴더)	|	./(현재폴더)
+
+---------------------------------------------------
+
+c:/	webapp	- dept	- deptList.jsp
+					- deptWrite.jsp
+					- deptWriteSave.jsp
+					- deptModify.jsp
+					- deptModifySave.jsp
+					- deptDelete.jsp
+		
+			- emp	- empList.jsp
+					- empWrite.jsp
+					- empWriteSave.jsp
+					- empModify.jsp
+					- deptDelete.jsp
+		
+			- css	- style.css
+			
