@@ -1,0 +1,54 @@
+localhost:8090/b/
+----------------------------------------------------------------------------------
+spring 구조 -> MVC패턴 구조
+
+M : Model		(Service->impl->Mapper)	
+V : View		(JSP/HTML/파워빌더)
+C : Controller	(Controller)
+----------------------------------------------------------------------------------
+[ 목록 출력 ]
+
+1. boardList.jsp		-> 화면출력
+   >> JSTL 프로그램 형식 - 스프링과의 연결 목적
+   >> JSP의 확장 버전
+2. BoardDto.java		-> 데이터의 (임시저장)
+3. BoardController.java	-> 웹주소의 (매핑)
+
+4. BoardService.java	-> 프로그램의 (명세처리)
+5. BoardServiceImpl.java	-> 프로그램의 (구현)
+6. BoardMapper.java		-> SQL과의 (연결)
+7. Board_SQL.xml		-> DB (SQL) 작성
+----------------------------------------------------------------------------------
+[ JSTL ]
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+----------------------------------------------------------------------------------
+[ 프로그램 목록 ]
+1. b/list		- 목록화면
+2. b/write	- 등록화면
+3. b/insert	- 등록처리
+4. b/detail	- 상세화면
+5. b/modify	- 수정화면
+6. b/update	- 수정처리
+7. b/delete	- 삭제처리
+
+[ 화면 목록 ]
+
+1. 목록화면 - b/list			- boardList.jsp
+2. 등록화면 - b/write			- boardWrite.jsp
+3. 상세화면 - b/detail			- boardDetail.jsp
+4. 수정화면 - b/modify			- boardModify.jsp
+5. 암호화면 - b/pass			- boardPass.jsp
+----------------------------------------------------------------------------------
+
+http://localhost:8090/board/boardDetail.jsp?seqid=15
+
+1.	apache-tomcat
+	apache => 웹 주소를 인지하고 파일을 오픈 함
+	단, 오픈전에 tomcat이 파일을 캐치해서 jsp를 html 변환해서 완벽한 html을 브라우저를 통해 오픈함
+	
+
+http://localhost:8090/boardDetail?seqid=15
+
+1. apache 서버에서 주소를 받음
+2. apache 서버에서 주소를 통해 해당 메소드를 실행
